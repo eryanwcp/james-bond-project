@@ -19,7 +19,7 @@
               <transformers>
                 <transformer />
                 <transformer>
-                  <mainClass>com.coffeeshop.CoffeeShopApplication</mainClass>
+                  <mainClass>com.jamesbond.JamesBondMoviesApplication</mainClass>
                 </transformer>
               </transformers>
             </configuration>

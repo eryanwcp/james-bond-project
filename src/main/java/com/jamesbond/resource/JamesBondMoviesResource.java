@@ -1,7 +1,7 @@
-package com.coffeeshop.resource;
+package com.jamesbond.resource;
 
-import com.coffeeshop.HardCodedDatabase;
-import com.coffeeshop.coffee.Channel;
+import com.jamesbond.HardCodedDatabase;
+import com.jamesbond.skytv.Channel;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -15,11 +15,11 @@ import java.util.List;
 
 @Path("/schedule")
 @Produces(MediaType.APPLICATION_JSON)
-public class CoffeeShopResource {
+public class JamesBondMoviesResource {
 
     private HardCodedDatabase hardCodedDatabase;
 
-    public CoffeeShopResource(HardCodedDatabase hardCodedDatabase) {
+    public JamesBondMoviesResource(HardCodedDatabase hardCodedDatabase) {
         this.hardCodedDatabase = hardCodedDatabase;
     }
 

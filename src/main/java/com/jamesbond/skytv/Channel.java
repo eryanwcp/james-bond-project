@@ -1,4 +1,4 @@
-package com.coffeeshop.coffee;
+package com.jamesbond.skytv;
 
 /**
  * Created by Serkan.Tugrul on 08/06/2015.

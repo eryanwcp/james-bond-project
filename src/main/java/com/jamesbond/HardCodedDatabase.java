@@ -1,6 +1,6 @@
-package com.coffeeshop;
+package com.jamesbond;
 
-import com.coffeeshop.coffee.Channel;
+import com.jamesbond.skytv.Channel;
 
 import java.util.ArrayList;
 import java.util.List;

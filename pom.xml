@@ -55,7 +55,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.coffeeshop.CoffeeShopApplication</mainClass>
+                                    <mainClass>com.jamesbond.JamesBondMoviesApplication</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
