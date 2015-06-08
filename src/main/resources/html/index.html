@@ -5,50 +5,81 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
+<body data-spy="scroll" data-target="#myScrollSpy" data-offset="20">
 
-<div ng-controller="OrderController" class="container">
-    <alert ng-repeat="message in messages" type="message.type" close="closeAlert($index)">
-        {{message.msg}}
-    </alert>
+<div ng-controller="OrderController" class="container table-responsive">
 
-    <form ng-submit="giveMeCoffee()">
+    <!--<alert ng-repeat="message in messages" type="message.type" close="closeAlert($index)">-->
+    <!--{{message.msg}}-->
+    <!--</alert>-->
 
-        <div class="form-group">
-            <label>Drink</label>
-            <select ng-model="drink.type" ng-options="type.name for type in types | orderBy: 'name'"
-                    class="form-control"></select>
+    <form>
+
+        <!--<div class="form-group">-->
+        <!--<label>Drink</label>-->
+        <!--<select ng-model="drink.type" ng-options="type.name for type in types | orderBy: 'name'"-->
+        <!--class="form-control"></select>-->
+        <!--</div>-->
+        <div class="inner">
+
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>Channel</th>
+                    <th>9AM</th>
+                    <th>10AM</th>
+                    <th>11AM</th>
+                    <th>12PM</th>
+                    <th>1PM</th>
+                    <th>2PM</th>
+                    <th>3PM</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="channel in channels" class="alert-info">
+                    <td>{{channel.name}}</td>
+                    <td class="filterable-cell"><a href="#" class="btn btn-primary"><i
+                            class="icon-check icon-white"></i>{{channel.nineAm}}</a></td>
+                    <td class="filterable-cell"><a href="#" class="btn btn-primary"><i
+                            class="icon-check icon-white"></i>{{channel.tenAm}}</a></td>
+                    <td class="filterable-cell"><a href="#" class="btn btn-primary"><i
+                            class="icon-check icon-white"></i>{{channel.elevenAm}}</a></td>
+                    <td class="filterable-cell"><a href="#" class="btn btn-primary"><i
+                            class="icon-check icon-white"></i>{{channel.twelvePm}}</a></td>
+                    <td class="filterable-cell"><a href="#" class="btn btn-primary"><i
+                            class="icon-check icon-white"></i>{{channel.onePm}}</a></td>
+                    <td class="filterable-cell"><a href="#" class="btn btn-primary"><i
+                            class="icon-check icon-white"></i>{{channel.twoPm}}</a></td>
+                    <td class="filterable-cell"><a href="#" class="btn btn-primary"><i
+                            class="icon-check icon-white"></i>{{channel.threePm}}</a></td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <!--<div class="form-group">-->
+            <!--<label>Size</label>-->
+            <!--<select ng-model="drink.size" ng-options="size for size in sizes" class="form-control"></select>-->
+            <!--</div>-->
+
+            <!--<div class="form-group">-->
+            <!--<label>Region</label>-->
+            <!--<select ng-model="drink.region" ng-options="region for region in regions" class="form-control"></select>-->
+            <!--</div>-->
+
+            <!--<div class="form-group">-->
+            <!--<label>Your Name</label>-->
+            <!--<input type="text" ng-model="drink.drinker" ng-required="true" class="form-control">-->
+            <!--</div>-->
+
+            <!--<div class="form-group">-->
+            <!--<input type="submit" class="btn btn-default btn-lg" value="Give Me Coffee!!!!!!"/>-->
+            <!--</div>-->
         </div>
-
-        <table>
-            <tr ng-repeat="x in channels">
-                <td>{{ x.name }}</td>
-                <td>{{ x.programme }}</td>
-            </tr>
-        </table>
-
-        <div class="form-group">
-            <label>Size</label>
-            <select ng-model="drink.size" ng-options="size for size in sizes" class="form-control"></select>
-        </div>
-
-        <div class="form-group">
-            <label>Region</label>
-            <select ng-model="drink.region" ng-options="region for region in regions" class="form-control"></select>
-        </div>
-
-        <div class="form-group">
-            <label>Your Name</label>
-            <input type="text" ng-model="drink.drinker" ng-required="true" class="form-control">
-        </div>
-
-        <div class="form-group">
-            <input type="submit" class="btn btn-default btn-lg" value="Give Me Coffee!!!!!!"/>
-        </div>
-
     </form>
 
-    <pre>{{drink|json}}</pre>
+    <!--<pre>{{channels|json}}</pre>-->
+
 </div>
 
 <script type="text/javascript" src="js/angular.min.js"></script>
