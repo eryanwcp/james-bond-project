@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="coffee-shop-example" />
+        <module name="james-bond-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="coffee-shop-example" target="1.5" />
+      <module name="james-bond-example" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
