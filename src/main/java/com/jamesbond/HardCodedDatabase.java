@@ -13,12 +13,12 @@ public class HardCodedDatabase {
     private static List<Channel> dataStore = new ArrayList<Channel>();
 
     public HardCodedDatabase() {
-        dataStore.add(new Channel("Sean Connery", "Goldfinger", "Goldfinger", "No programmes available", "Moonraker", "Moonraker", "No programmes available", "Dr. No"));
-        dataStore.add(new Channel("George Lazenby", "No programmes available", "Skyfall", "Skyfall", "No programmes available", "No programmes available", "Licence to Kill", "Licence to Kill"));
-        dataStore.add(new Channel("Roger Moore", "Thunderball", "Thunderball", "No programmes available", "Die Another Day", "Die Another Day", "No programmes available", "No programmes available"));
-        dataStore.add(new Channel("Timothy Dalton", "On Her Majesty's Secret Service", "On Her Majesty's Secret Service", "No programmes available", "No programmes available", "Casino Royal", "Casino Royal", "Casino Royal"));
-        dataStore.add(new Channel("Pierce Brosnan", "No programmes available", "No programmes available", "No programmes available", "A View to Kill", "A View to Kill", "No programmes available", "No programmes available"));
-        dataStore.add(new Channel("Daniel Craig", "Quantum of Solace", "Quantum of Solace", "No programmes available", "No programmes available", "You Only Live Twice", "You Only Live Twice", "No programmes available"));
+        dataStore.add(new Channel("Sean Connery", "Goldfinger", "Goldfinger", "Moonraker", "Moonraker", "Golden Eye", "Golden Eye", "Dr. No"));
+        dataStore.add(new Channel("George Lazenby", "Skyfall", "Skyfall", "Skyfall", "The Spy Who Loved Me", "The Spy Who Loved Me", "Licence to Kill", "Licence to Kill"));
+        dataStore.add(new Channel("Roger Moore", "Thunderball", "Thunderball", "Die Another Day", "Die Another Day", "Diamonds Are Forever", "Diamonds Are Forever", "From Russia With Love"));
+        dataStore.add(new Channel("Timothy Dalton", "On Her Majesty's Secret Service", "On Her Majesty's Secret Service", "The Living Day Lights", "The Living Day Lights", "Casino Royal", "Casino Royal", "Casino Royal"));
+        dataStore.add(new Channel("Pierce Brosnan", "Tomorrow Never Dies", "Tomorrow Never Dies", "For Your Eyes Only", "For Your Eyes Only", "A View to Kill", "A View to Kill", "Live and Let Die"));
+        dataStore.add(new Channel("Daniel Craig", "Quantum of Solace", "Quantum of Solace", "The World Is Not Enough", "The World Is Not Enough", "You Only Live Twice", "You Only Live Twice", "Octopussy"));
     }
 
     public List<Channel> getChannels() {

@@ -12,3 +12,7 @@ jamesBondApp.controller('MovieController', function ($scope, GetChannels) {
             $scope.channels = data;
         });
 });
+
+
+
+

@@ -29,7 +29,7 @@
                 <tr ng-repeat="channel in channels" class="alert-info">
                     <td>{{channel.name}}</td>
                     <td class="filterable-cell">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#nineAmModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nineAmModal">
                             {{channel.nineAm}}
                         </button>
                         <div class="modal fade" id="nineAmModal" role="dialog">
@@ -55,7 +55,7 @@
                     </td>
 
                     <td class="filterable-cell">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#tenAmModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tenAmModal">
                             {{channel.tenAm}}
                         </button>
                         <div class="modal fade" id="tenAmModal" role="dialog">
@@ -80,7 +80,7 @@
                     </td>
 
                     <td class="filterable-cell">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#elevenAmModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#elevenAmModal">
                             {{channel.elevenAm}}
                         </button>
                         <div class="modal fade" id="elevenAmModal" role="dialog">
@@ -105,7 +105,7 @@
                     </td>
 
                     <td class="filterable-cell">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#twelvePmModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#twelvePmModal">
                             {{channel.twelvePm}}
                         </button>
                         <div class="modal fade" id="twelvePmModal" role="dialog">
@@ -130,7 +130,7 @@
                     </td>
 
                     <td class="filterable-cell">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#OnePmModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#OnePmModal">
                             {{channel.onePm}}
                         </button>
                         <div class="modal fade" id="OnePmModal" role="dialog">
@@ -155,7 +155,7 @@
                     </td>
 
                     <td class="filterable-cell">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#twoPmModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#twoPmModal">
                             {{channel.twoPm}}
                         </button>
                         <div class="modal fade" id="twoPmModal" role="dialog">
@@ -180,7 +180,7 @@
                     </td>
 
                     <td class="filterable-cell">
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#threePmModal">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#threePmModal">
                             {{channel.threePm}}
                         </button>
                         <div class="modal fade" id="threePmModal" role="dialog">
@@ -208,9 +208,6 @@
             </table>
         </div>
     </form>
-
-    <pre>{{channelsTest|json}}</pre>
-
 </div>
 
 <script type="text/javascript" src="js/angular.min.js"></script>
@@ -219,6 +216,7 @@
 <script type="text/javascript" src="js/ui-bootstrap-tpls-0.10.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
