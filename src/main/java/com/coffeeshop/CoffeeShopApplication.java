@@ -25,7 +25,9 @@ public class CoffeeShopApplication extends Application<CoffeeShopConfiguration>{
 
     @Override
     public void run(CoffeeShopConfiguration configuration, final Environment environment) throws Exception {
+        HardCodedDatabase hardCodedDatabase = new HardCodedDatabase();
+
         environment.jersey().setUrlPattern("/application/*");
-        environment.jersey().register(new CoffeeShopResource());
+        environment.jersey().register(new CoffeeShopResource(hardCodedDatabase));
     }
 }

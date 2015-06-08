@@ -10,7 +10,11 @@ coffeeApp.factory('CoffeeOrder', function ($resource) {
 });
 
 
-coffeeApp.controller('OrderController', function ($scope, CoffeeOrder, $http) {
+coffeeApp.factory("GetChannels", function($resource) {
+    return $resource("/application/schedule/channels");
+});
+
+coffeeApp.controller('OrderController', function ($scope, GetChannels) {
     //$scope.types = [
     //    {name: 'Americano', family: 'Coffee'},
     //    {name: 'Latte', family: 'Coffee'},
@@ -18,10 +22,13 @@ coffeeApp.controller('OrderController', function ($scope, CoffeeOrder, $http) {
     //    {name: 'Cappuccino', family: 'Coffee'}
     //];
 
+        GetChannels.query(function (data) {
+            $scope.channels = data;
+        });
 
-    $scope.channels = [
+       /* $scope.channels = [*/
 
-        {
+       /* {
             name: 'Sean Connery',
             nineAm: 'Goldfinger',
             tenAm: 'Goldfinger',
@@ -83,7 +90,7 @@ coffeeApp.controller('OrderController', function ($scope, CoffeeOrder, $http) {
             threePm: 'No programmes available'
         }
 
-    ]
+    ]*/
 
 
     //
